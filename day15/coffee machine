@@ -1,0 +1,38 @@
+print("welcome to tea stall")
+choice = 10
+while choice != exit:
+    choice = input('''what  would you like to have?
+    select 1/2/3/4 
+    1) tea
+    2) coffee
+    3) cold coffee
+    4) exit
+    ''')
+global money
+global milk
+global water
+global coffee
+money = 0
+milk = 1000 
+water = 1000
+coffee = 500 
+def tea():
+    print("please give $10 money")
+    return money+10
+    return milk-50
+    return water-100
+    return coffee-10
+
+
+if choice == "report":
+    print(f'''money = {money}
+            milk = {milk}
+            water = {water}
+            coffee = {coffee}
+    ''')
+elif choice == 1:
+    tea()
+elif choice == 4:
+    exit()
+
+

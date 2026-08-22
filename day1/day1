@@ -1,0 +1,11 @@
+name=input("enter your name  ")
+length= len(name)
+print(length)
+
+print("WELCOME TO BAND GENERATOR")
+print(name)
+city=(input("enter your city name "))
+pet=(input("enter your pet name "))
+print("your band name could be   " + city + "" + pet)
+print(f"your band name is {city}{pet}")
+print("your band name could be  " +  pet + city)

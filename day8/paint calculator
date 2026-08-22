@@ -1,0 +1,12 @@
+print("welcome to paint calculator")
+height = int(input("enter the height of the wall "))
+width= int(input("enter the width of the wall "))
+coverage = 5 
+def price():
+    price = height*width*50
+    print(f"you need to pay {price}")
+def cans():
+    cans = (height*width)/5
+    print(f"amount of cans needed is {cans}" )
+price()
+cans()

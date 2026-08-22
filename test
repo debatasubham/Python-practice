@@ -1,0 +1,4 @@
+todo = {
+    "1.add task": "work",
+    "2. task left":"work_left",}
+print(todo)

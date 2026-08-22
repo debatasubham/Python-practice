@@ -1,0 +1,35 @@
+# conditional operators IF/ELIF/ELSE
+#odd/even
+#logical operator OR/AND
+height= int(input("enter your height in cm"))
+bill=0
+if height>=120:
+    print("enjoy your ride ")
+    age=int(input("enter your age"))
+    if age<=12:
+        bill=50
+        print("child pay 50 rupees")
+    elif age<=18:
+        bill=70
+        print("youth pay 70 rupees")
+    elif age>=45 and age<=55:
+        print("wow ! you are lucky , so free ride")
+    else :
+        bill=120
+        print("adult pay 120 rupees")
+    photo = input("do you want photos? y or n ?")
+    if photo == "y":
+        bill += 30
+        print(f"the final bill is {bill}")
+    else:
+        bill += 0
+        print(f"the final bill is {bill}")
+
+else:
+    print("grow up to enjoy your ride")
+if height==0:
+    print("no. is neither odd nor even")
+elif height%2==0:
+    print("height is even number")
+else:
+    print("height is odd number")

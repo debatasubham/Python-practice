@@ -1,0 +1,8 @@
+age = input("enter your current age in numbers")
+print(int(age))
+f_age = int(90)-int(age)
+years_left = int(f_age)
+months_left = int(f_age)*12
+weeks_left = int(months_left)*4
+days_left = int(weeks_left)*7
+print(f"you have {days_left} days left,{weeks_left} weeks left,{months_left} months left,{years_left} years left onto 90 years")

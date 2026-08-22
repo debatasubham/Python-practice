@@ -1,0 +1,43 @@
+
+balance = 0
+
+def addition():
+    global balance
+    d = int(input("enter deposite amount: \n"))
+    balance = balance + d
+    d = print(f"you have balance {balance}")
+
+def subtraction():
+    global balance
+    d = int(input("enter withdrawl amount : \n"))
+    if d>balance:
+        print("you have not sufficient amount in your account")
+    else:
+
+        balance = balance - d
+        d = print(f"you have balance {balance}") 
+
+def left():
+    global balance
+    d = print(f"you have balance {balance}")
+    
+
+while True:
+    print('''
+    WELCOME TO SD ATM
+    1. deposit
+    2. withdrawl
+    3. balance
+    4. exit ''')
+    choose_option = int(input("choose from above option : "))
+    if choose_option == 1:
+        addition()
+    elif choose_option == 2:
+        subtraction()
+    elif choose_option == 3:
+        left()
+    elif choose_option == 4:
+        print("you have sucessfully exited")
+        break
+    else:
+        print("wrong input")

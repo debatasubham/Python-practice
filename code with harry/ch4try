@@ -1,0 +1,19 @@
+#list
+a=["subham","atla","jagan",1,11,345.87]
+print(a[2])
+print(a[0:6:2])
+a.append("aman")# append =add to last
+print(a)
+a.reverse
+print(a)
+a.insert(1,"soham")
+print(a)
+z=[101,102,103,104,105,106]
+z.pop(3)
+print(z)
+z.remove(102)
+print(z)
+#tuple
+t=(233,121,345,"soam",234)
+print(t.count(121))
+print(len(t))

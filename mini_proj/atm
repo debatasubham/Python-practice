@@ -1,0 +1,49 @@
+    #ATM Simulation
+    #Concepts: functions, loops, conditionals
+    #What to build:
+    #Options:
+    #Check balance
+    #Deposit
+    #Withdraw
+    #Upgrade ideas:
+    #PIN system
+    #Transaction history
+balance = 1000
+
+def addition():
+    global balance
+    d = int(input("enter deposite amount: \n"))
+    balance = balance + d
+    d = print(f"you have balance {balance}")
+
+def subtraction():
+    global balance
+    d = int(input("enter withdrawl amount : \n"))
+    balance = balance - d
+    d = print(f"you have balance {balance}") 
+
+def left():
+    global balance
+    d = print(f"you have balance {balance}")
+option = {
+    "1" : addition,
+    "2" : subtraction,
+    "3" : left,
+    "4": exit ,
+}
+while True:
+    print('''
+    welcome to ATM
+
+    1. deposit
+    2. withdrawl
+    3. balance
+    4. exit ''')
+    choose_option = input("choose from above option : ")
+    operation = option[choose_option]
+    operation()
+    if choose_option == 4:
+        print("you have sucessfully exited")
+        break
+    
+

@@ -1,0 +1,16 @@
+#loop - for loop
+# range(1,100)-> 100 not included
+fruits = ["apple", "orange", "mango"]
+for fala in fruits:
+    print(fala)
+    print(fala + "juice")
+total=0
+for number in range(1,10,3):
+    print(number)
+    total+=number
+print(f"total is {total}")
+addition=0
+for even in range(2,101,2):
+    addition +=even
+print(addition)
+

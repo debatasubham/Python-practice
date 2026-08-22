@@ -1,0 +1,16 @@
+#function -> def my_function():
+#           my_function() 
+# reborg world -> alone python
+#                hurdle 1 python
+#                hurdle 2 python
+#                hurdle 3 python 
+#                hurdle 4 python
+#               maze python
+# indentention -> 4 spaces or tab key 
+# while not True:                     
+t = ("function")
+k = len("function")
+def my_function():
+    print(t)
+    print(k)
+my_function()

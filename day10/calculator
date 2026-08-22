@@ -1,0 +1,23 @@
+from replit import clear
+n1 = int(input("enter 1st number:"))
+n2 = int(input("enter 2nd number"))
+def add(n1,n2):
+    return n1+n2
+def sub(n1,n2):
+    return n1-n2
+def mult(n1,n2):
+    return n1*n2
+def divide(n1,n2):
+    return n1/n2
+operation = {
+    "+":add,
+    "-":sub,
+    "*":mult,
+    "/":divide,
+}
+for symbol in operation:
+    print(symbol)
+operation_symbol = input("pick an operation from the line above : ")   
+calculation_function = operation[operation_symbol]
+answer = calculation_function(n1,n2)
+print(f"{n1}{operation_symbol}{n2}= {answer}")

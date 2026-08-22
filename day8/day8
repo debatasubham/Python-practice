@@ -1,0 +1,22 @@
+# function with input
+# more than one input
+# argument and  parameter
+# caesar ciphor 
+#  
+def greet():
+    print(''' hello ! 
+    how are you ? 
+    looking smart , ahhh''')
+greet()
+
+def greet_name(name):
+    print(f''' hello ! {name}
+    how are you {name} ? 
+    looking smart , ahhh''')
+greet_name("subham")
+
+def greet2(name,place):
+    print(f"hello ! {name}")
+    print(f"whats the weather in {place}")
+greet2("subham", "cuttack")
+greet2(place="bbsr",name="satyam")

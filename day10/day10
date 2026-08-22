@@ -1,0 +1,14 @@
+# to make calculator
+# function with outputs 
+# .title()
+# return values
+# docstrings """you can write any thing in multiline 
+# and perform any function"""
+
+f_name = input ("enter first name: ")
+l_name = input("enter second name: ")
+def format_names(f_name,l_name):
+    ff_name = f_name.title()
+    fl_name = l_name.title()
+    print(f"{ff_name} {fl_name}")
+format_names(f_name,l_name)

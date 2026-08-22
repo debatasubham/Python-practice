@@ -1,0 +1,24 @@
+from replit import clear
+print("welcome to the auction" )
+auction={}
+auction_finished = False
+def high_bid(record):
+    highest_bid = 0
+    winner = ""
+    for bidder in record:
+        bid_amt=record[bidder]
+        if bid_amt > highest_bid:
+            highest_bid = bid_amt
+            winner = bidder
+    print(f"the winner is {winner} with a bid of ${highest_bid}")
+
+while not auction_finished:
+    name = input("what is your name ?")
+    bid = int((input("what's your bid ? $")))
+    auction[name]=bid
+    other= input("are there any other bidders ? type 'yes' or 'no' ").lower()
+    if other=="no":
+        auction_finished = True
+        high_bid(auction)
+    elif other=="yes":
+        clear()

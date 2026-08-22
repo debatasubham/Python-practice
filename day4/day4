@@ -1,0 +1,30 @@
+# random module
+# random.randint(a,b) -> {both inclusive}
+# random.random() -> {0 to 0.9}
+# random.seed(123) -> gives randomness a particular no. value
+# random.choice(y) -> select randomly from strings
+# list[0,1,2] -> list.append - add to list's last
+# list.insert(w,3) - adds w to 4th posn
+# list.remove(t) - removes t from list
+# list.extend[p,q,r,s,t] - adds list to the last of the list
+
+import random
+n =int( input ("enter your seed no. "))
+random.seed(n)
+k = random.randint(0,1)
+if k==1:
+    print("it's a tail")
+else :
+    print("it's a head")
+district = ["cuttack","bbsr","jajpur","bhadrak","sambalpur"]
+g= district.append("rourkela")
+print(district)
+new_district= district.extend(["anugul" , "dhenkanal"])
+print(district)
+state =[ "odisha", "goa","andrapradesh","tamilnadu"]
+lang= ["odia","marathi","telegu","kannada"]
+diversity = [state,lang]
+print(diversity)
+
+
+    

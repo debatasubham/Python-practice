@@ -1,0 +1,51 @@
+# dictionaries
+# nesting
+# empty list = []
+#  empty dictionaries = {}
+# to wipe an existing dictionary ->
+# programming_dictionary = {} , ( it sets to empty dictionary)
+# nesting -> list inside dictionary
+#            dictionary inside list
+#           dictionary under dictionary  
+
+
+programming_dictionary={
+    "bug": " an error in program that prevents the program fron running as expected.",
+    "function": " a piece of code that you can call easily call over again and again.",
+}
+print(programming_dictionary["function"])
+# to add a new 
+programming_dictionary["loop"]= "the action of doing something agian and again",
+for thing in programming_dictionary:
+    print(thing) # only prints keys not values 
+    print(programming_dictionary[thing]) # prints values of keys
+capitals ={
+    "france": "paris",
+    "germany":"berlin",
+}
+travel_log = {
+    "france": {"cities_visited":["paris","lille","dijoin"]}, # dictionary inside dictionary
+    "germany":["berlin","hamburg","stuttgart"], # list inside ditionary
+}
+# nesting dictionary insde list
+travel_log = [
+    {
+    "country":"france" ,
+    "cities_visited":["paris","lille","dijoin"],
+    "total visited":3,
+    },
+     {
+    "country":"germany" ,
+    "cities_visited":["berlin","hamburg","stuttgart"],
+    "total visited":3,
+    }
+]
+# adding function to add country
+def add_new_country(country_visited, cities_visits, total_visits):
+    new_country={}
+    new_country["country"]=country_visited,
+    new_country["cities_visited"]=cities_visits,
+    new_country["total_visits"]= total_visits,
+    travel_log.append(new_country)
+add_new_country("russia",["moscow","saint petersburg"], 2)
+print(travel_log)

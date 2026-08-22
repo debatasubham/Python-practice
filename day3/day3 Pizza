@@ -1,0 +1,22 @@
+print("welcome to pizza deliveries")
+size = input("what size pizza do you want? s, m, or l ?")
+bill =0
+if size == "s":
+    bill = 50
+    pepp = input("do you want pepperoni? y or n ?")
+    if pepp =="y":
+        bill +=20
+elif size =="m":
+    bill = 80
+    pepp = input("do you want pepperoni? y or n ?")
+    if pepp=="y":
+     bill += 30
+elif size == "l":
+    bill = 100
+    pepp = input("do you want pepperoni? y or n ?")
+    if pepp=="y":
+        bill += 30
+chee = input("do you want extra cheese? y or n ?")
+if chee =="y":
+    bill += 10
+k = print(f"your total bill is {bill} ")

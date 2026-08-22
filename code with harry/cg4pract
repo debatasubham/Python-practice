@@ -1,0 +1,17 @@
+student=[]
+f1=int(input("enter student marks"))
+student.append(f1)
+f2=int(input("enter student marks"))
+student.append(f2)
+f3=int(input("enter student marks"))
+student.append(f3)
+f4=int(input("enter student marks"))
+student.append(f4)
+f5=int(input("enter student marks"))
+student.append(f5)
+student.sort()
+print(student)
+a=[7,0,8,0,9]
+print("sum of a is ",sum(a))
+n=a.count(0)
+print(n)

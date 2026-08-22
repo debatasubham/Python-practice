@@ -1,0 +1,10 @@
+f_name = input ("enter first name: ")
+l_name = input("enter second name: ")
+def format_names(f_name,l_name):
+    if f_name=="" or l_name=="":
+        ruturn ("you did not provide valid inputs.")
+    ff_name = f_name.title()
+    fl_name = l_name.title()
+    return (f"{ff_name} {fl_name}")
+    print(" it does not prints bcz already returned above")
+format_names(f_name,l_name)

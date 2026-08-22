@@ -1,0 +1,6 @@
+score= input("enter score ").split(", ")
+for n in range(0,len(score)):
+    score[n] = int(score[n])
+print(score)
+t=(print(max(score)))
+print(f"the highest mark among these is:{t}")

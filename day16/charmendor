@@ -1,0 +1,42 @@
+class Pokemon:
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
+
+
+class PokemonTable:
+    def __init__(self):
+        self.pokemons = []
+
+    def add_pokemon(self, pokemon):
+        self.pokemons.append(pokemon)
+
+    def print_table(self):
+        border = "+--------------+------------+"
+        header = "| Pokemon Name |    Type    |"
+
+        print(border)
+        print(header)
+        print(border)
+
+        for p in self.pokemons:
+            print(f"| {p.name:<12} | {p.type:<10} |")
+
+        print(border)
+
+
+# Create Pokemon objects
+p1 = Pokemon("Pikachu", "Electric")
+p2 = Pokemon("Squirtle", "Water")
+p3 = Pokemon("Charmander", "Fire")
+p4= Pokemon("bulbasor","grass")
+
+# Create table and add pokemons
+table = PokemonTable()
+table.add_pokemon(p1)
+table.add_pokemon(p2)
+table.add_pokemon(p3)
+table.add_pokemon(p4)
+
+# Print the table
+table.print_table()

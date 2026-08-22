@@ -1,0 +1,13 @@
+a=input("enter your name ")
+print(f"good afternoon ,{a}") # f and {} used
+letter = '''dear <|name|>,\nyou are selected \n<|date|>'''
+print(letter.replace("<|name|>",a).replace("<|date|>","20 jan 2026"))
+#.replace is used to replace
+#.find used to find the position in number
+#len() is used to find length of string
+b= " you see a aeroplane"
+print(b.find("a"))
+print(b.replace("a","an"))
+print(len(a))
+#\n is new line
+# \t is used  as tab

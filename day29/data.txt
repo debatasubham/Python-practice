@@ -1,0 +1,8 @@
+check1 | checkemail1.com | 1235546
+check2 | checkemail2.com | 567890
+
+ | checkemail.com | 
+check3 | checkemail3.3com | qwerty
+check4 | checkemail4.com | subham
+subhamcheck1 | debatacheck1.com | JustChecking
+instagram | instagram1.com | 7+5t&NcQjW&5B7LuC

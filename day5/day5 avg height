@@ -1,0 +1,17 @@
+height= input("enter heights ").split(", ")
+for n in range(0,len(height)):
+    height[n] = int(height[n])
+print(height)
+avg = round(sum(height)/len(height))
+print(avg)
+# by loop method
+total = 0
+for h in height:
+    total +=h
+print(total)
+student=0
+for n in height:
+    student+=1
+print(student)
+average = round(total/student)
+print(average)

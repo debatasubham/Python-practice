@@ -1,0 +1,7 @@
+num=(input("enter your 2 digit number"))
+first_num= num[0]
+second_num= num[1]
+print(first_num)
+print(second_num)
+final= int(first_num) + int(second_num)
+print(final)

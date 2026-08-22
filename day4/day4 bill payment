@@ -1,0 +1,7 @@
+import random
+k = print("welcome to the cafe")
+g = input("enter names who wants to pay using comma between names \n")
+h= g.split(",")
+n = random.choice(h)
+print(n + " is going to pay the bill today")
+

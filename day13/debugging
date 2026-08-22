@@ -1,0 +1,3 @@
+#range(1,100) include only 1 but not include 100
+#randint(1,100) include both 1 and 100
+# or  // and

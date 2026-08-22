@@ -1,0 +1,52 @@
+rock = ("""
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+""")
+
+paper = ("""
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+""")
+
+scissor = ("""
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+""")
+game = [rock, paper, scissor]
+import random
+print("welcome to rock paper scissor game")
+s = int(input("what do you choose ? type 0 for rock, 1 for paper, or 2 for scissor \n"))
+print(game[s])
+k = random.randint(0,2)
+print(f"computer choice: {k}")
+print(game[k])
+if s==k:
+    print("draw")
+elif s ==0 and k==1:
+    print("you loose")
+elif s==0 and k==2:
+    print("you won")
+elif s==1 and k==0:
+    print("you won")
+elif s==1 and k==2:
+    print("you loose")
+elif s==2 and k==0:
+    print("you loose")
+elif s==2 and k==1:
+    print("you won")
+elif s==k:
+    print("draw")
+else:
+    print("you inputed invalid value")

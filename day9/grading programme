@@ -1,0 +1,23 @@
+from replit import clear
+student_grades = {
+    "harry" : 81 ,
+    "ron":78,
+    "hermione":99,
+    "draco": 74,
+    "neville": 62,
+}
+
+for student in student_grades:
+    score = student_grades[student]
+    if score > 90:
+        student_grades[student]="outstanding"
+    elif score > 80:
+        student_grades[student]="exceeds expectation"
+    elif score > 70:
+        student_grades[student]="acceptable"
+    elif score > 60:
+        student_grades[student]="fail"
+print(student_grades)
+
+
+ 

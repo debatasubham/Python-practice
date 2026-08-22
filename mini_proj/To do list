@@ -1,0 +1,34 @@
+task = []
+def work():
+    work = input("enter your work : \n")
+    task.append(work)
+    print("Task added sucessfully")
+def delete():
+    work = input("enter which work is done : \n")
+    task.remove(work)
+    print("Task removed sucessfully ")
+def work_left():
+    print(f"your task are {task}")
+
+while True:
+    print('''
+    welcome to To-do list
+    1. Add task
+    2. Delete task
+    3. Task left
+    4. exit
+    ''')
+    option = int(input("choose from the above options ? "))
+    if option == 1:
+        work()
+        print("you have sucessfully entered")
+    elif option ==2:
+        delete()
+    elif option == 3:
+        work_left()
+    elif option==4:
+        print("you have sucessfully exited")
+        break
+    else :
+        print("wrong input")
+

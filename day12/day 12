@@ -1,0 +1,13 @@
+#scope
+#local scope
+# global scope // global variable
+# there is no Block scope in python
+# modifying global scope
+enemies = "skeleton"
+def increase_enemies():
+    enemies = "zombie"
+    print(f"enemies inside the function  {enemies}")
+
+    
+increase_enemies()
+print(f"enemies outside the function  {enemies}")

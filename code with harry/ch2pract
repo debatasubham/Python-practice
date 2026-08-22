@@ -1,0 +1,10 @@
+a=int(input('enter 1st no.'))
+b=int(input("enter 2nd no."))
+c=float(input("enter 3rd no."))
+d=b>a
+print(type[a])
+print("the add of two nos is ", a+b)
+print("the remainder of c nos is ", c%2)
+print(d)
+print("the average of a and b is ",(a+b)/2)
+print("the square of c is ",c*c)

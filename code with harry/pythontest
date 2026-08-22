@@ -1,0 +1,5 @@
+a=int(input("enter first code:"))
+b=int(input("enter second code:"))
+print("sum is ",a+b)
+name = "good noon subham nice to meet you"
+print(name.replace("subham",[aman]))

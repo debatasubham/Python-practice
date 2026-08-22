@@ -1,0 +1,17 @@
+import random
+print("welcome to bomb defusal game " )
+print("there are 10 selected no. wire")
+print("cut the safe wire to defuse the bomb safely within 5 attempt ")
+c = random.randint(1,10)
+print()
+safe = 0
+for k in range(1,11):
+    wire = int(input("enter the wire no. you want to cut ? "))
+    if wire == c:
+        print("boom ! game over ")
+        break
+    else:
+        safe += 1
+        print("safe wire cut")
+        if safe==5:
+            print("bomb defused successfully")

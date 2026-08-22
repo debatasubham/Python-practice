@@ -1,0 +1,14 @@
+#datatypes string,numbers,float,boolean(true/false)
+#type checking,type conversion
+#BODMAS left to right
+#rRounding of floating nos = round()
+# f"string
+name ="123456"
+print(len(name))
+print("123"+"456")
+print(123+456)
+print(type(name))
+new_name=str(name)
+print(len(new_name))
+print(8/3)
+print(round(8/3))
